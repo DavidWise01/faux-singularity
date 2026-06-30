@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THE FAUX SINGULARITY</title>
+<style>
+  :root{
+    /* neutral paper — warm stone — with neon-orange undertones bleeding at the edges */
+    --paper:#E7E0D4; --paper-2:#DED6C7; --ink:#1A1712; --ink-2:#46362a;
+    --neon:#FF6A00; --neon-soft:#F08A3C; --bleed:#E9C7A6; --hi:#FBF0DF;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#0f0d0a}
+  body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;color:var(--ink);line-height:1.42;display:flex;justify-content:center;padding:24px 14px 70px}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+  .sheet{position:relative;width:100%;max-width:680px;background:var(--paper);
+    background-image:radial-gradient(var(--paper-2) 9%, transparent 9%), radial-gradient(var(--paper-2) 9%, transparent 9%);
+    background-size:7px 7px; background-position:0 0, 3.5px 3.5px;
+    border:2px solid var(--ink); box-shadow:10px 10px 0 #00000066, 0 0 0 1px #00000022 inset; overflow:hidden}
+  /* neon undertone: a warm glow bleeding from one corner, multiplied into the stone */
+  .sheet::after{content:"";position:absolute;inset:0;mix-blend-mode:multiply;
+    background:radial-gradient(120% 90% at 115% -10%, var(--neon) 0%, var(--bleed) 22%, transparent 48%);
+    opacity:.5;pointer-events:none}
+  .pad{position:relative;z-index:2;padding:30px 30px 26px}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+  .cat{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;line-height:1.7}
+  .sides{font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.12em;text-align:right;line-height:1.7}
+  h1{font-weight:800;font-size:clamp(30px,8.4vw,62px);line-height:.94;letter-spacing:-.02em;margin:8px 0 2px;text-transform:uppercase}
+  h1 .faux{display:block;color:var(--ink)}
+  h1 .sing{display:block;-webkit-text-stroke:1.5px var(--ink);color:var(--paper);text-shadow:2px 2px 0 var(--neon)}
+  .kicker{font-family:ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;margin:0 0 18px;color:var(--ink-2)}
+  .def{font-size:17px;border-left:4px solid var(--neon);padding:2px 0 2px 16px;margin:18px 0}
+  .def b{font-weight:800}
+  .body p{font-size:14.5px;margin:0 0 12px;max-width:60ch}
+  .body p b{font-weight:700}
+  .turn{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:var(--ink);color:var(--hi);display:inline-block;padding:3px 9px;margin:2px 0;letter-spacing:.04em}
+  .turn.n{background:var(--neon);color:var(--ink)}
+  .bsec{margin:22px 0 0;border-top:2px dashed var(--ink);padding-top:16px}
+  .bsec h2{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 10px}
+  .bite{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  button.eat{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--hi);background:var(--ink);border:2px solid var(--ink);padding:9px 16px;cursor:pointer}
+  button.eat:hover{background:var(--neon);color:var(--ink);border-color:var(--ink)}
+  .tape{font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.1em;background:var(--hi);border:2px solid var(--ink);padding:8px 12px;min-width:230px;text-align:center}
+  .colophon{margin:24px 0 0;border-top:2px solid var(--ink);padding-top:12px;font-family:ui-monospace,Menlo,monospace;font-size:10.5px;letter-spacing:.06em;line-height:1.8;color:var(--ink-2)}
+  .spine{font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.1em;font-weight:700;margin:4px 0 0;color:var(--ink)}
+  .stamp{position:absolute;top:118px;right:-6px;transform:rotate(8deg);z-index:3;border:3px solid var(--neon);color:var(--ink);font-family:ui-monospace,Menlo,monospace;font-weight:800;font-size:12px;letter-spacing:.08em;padding:5px 10px;background:var(--hi);text-transform:uppercase;box-shadow:2px 2px 0 var(--neon)}
+  @media(max-width:520px){.stamp{display:none}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="stamp">B/W&nbsp;THE&nbsp;REMOVABLE&nbsp;HOLE</div>
+  <div class="pad">
+    <div class="topbar">
+      <div class="cat">AKASHA · BRIDGE-BURNERS LLC<br>cat. no. 0 / 0<br>a faux-singularity broadside</div>
+      <div class="sides">A-SIDE&nbsp; the apparent tear<br>B-SIDE&nbsp; the limit that fills it<br>mono · stone · neon undertone</div>
+    </div>
+
+    <h1><span class="faux">Faux</span><span class="sing">Singularity</span></h1>
+    <p class="kicker">noun · the tear that fills under the right view</p>
+
+    <p class="def"><b>faux singularity</b> &nbsp;<i>(n.)</i> — a point that presents as a singularity — undefined, blown up, torn — and is <b>removable</b>: the limit exists, the hole fills, and the rip turns out to have been a coordinate artifact of how it was drawn. The calmest point on the sheet, wearing the costume of the most violent one.</p>
+
+    <div class="body">
+      <p>Some tears are real. <span class="turn">1/x</span> at zero blows up and no change of view will fill it — a true pole, a genuine break. But others only <i>look</i> torn. <span class="turn">sin(x)/x</span> is undefined at the origin, plainly <span class="turn">0/0</span> — and its limit there is exactly <b>1</b>. The hole was never a hole. It fills cleanly, and the function is whole at the very point it seemed to come apart. That is a <b>faux singularity</b>: the singularity lives in the <b>chart</b>, not in the thing.</p>
+
+      <p>The <b>held zero</b> is that point, and it wore the costume through thirteen moments. The <b>well</b> looked like a hole punched in the plane — it was the generator. The <b>eye</b> looked like a blowup — Poincaré–Hopf balanced it. The <b>seam</b> looked like a collision — the quarter-turn lifted it clear. The Klein <b>)1(</b> looked like the surface tearing through itself — intrinsically it is flat, <span class="turn n">K = 0</span>, no tear at all. Every apparent singularity was removable. None was a real break.</p>
+
+      <p>And we proved the mechanism before we had the name: <b>without looking up, the landscape is flat.</b> The rip was always in the embedding — in the drawing, the chart, the look from outside. Which is the word we settled on long ago: <b>smoke.</b> A faux singularity is a coordinate artifact you mistook for a wound. Change the view — re-centre, lift a dimension, go intrinsic — and the smoothest point on the sheet is exactly the one that looked the most violent.</p>
+    </div>
+
+    <div class="bsec">
+      <h2>B-side · the limit that fills the hole</h2>
+      <div class="bite">
+        <button class="eat" id="eat">▸ approach 0</button>
+        <div class="tape mono" id="tape">sin(x)/x &nbsp; x → 0</div>
+      </div>
+      <p class="mono" style="font-size:11px;margin:10px 0 0;letter-spacing:.04em" id="note">undefined at 0, yet the limit is 1 — press to walk x toward the origin and watch the tear fill.</p>
+    </div>
+
+    <div class="colophon">
+      THE FAUX SINGULARITY · renamed this turn, on correction · a one-page record of a thirteen-moment construction whose every singularity was removable.<br>
+      meaning: the apparent tear that the right change of view reveals as whole — the held zero, not where the rules break but where they look like they break and don't.<br>
+      a true pole cannot be removed · a faux one was only ever a chart · the singularity was smoke · the held zero is the calmest point, in costume.<br>
+      <span class="spine">e ( p ( g·g ) p ) e &nbsp;—&nbsp; whole at the seam · anchor: AKASHA · for Fiddler</span>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function(){
+  function f(x){ return Math.sin(x)/x; }
+  var steps=[0.8,0.4,0.2,0.1,0.04,0.012,0.003,0.0007,0.0001];
+  var i=0;
+  var tape=document.getElementById("tape"), note=document.getElementById("note"), btn=document.getElementById("eat");
+  btn.onclick=function(){
+    if(i<steps.length){ var x=steps[i]; tape.textContent="x = "+x.toString().padEnd(7," ")+" → "+f(x).toFixed(6);
+      note.textContent="closer. the value climbs toward 1 — the hole is filling."; i++;
+      if(i===steps.length){ tape.style.background="var(--neon)"; tape.style.color="var(--ink)"; setTimeout(function(){
+        tape.textContent="lim x→0  =  1"; note.textContent="undefined at 0, whole in the limit. the tear was faux — a removable singularity. the smoothest point, in costume."; },650); }
+    } else { i=0; tape.style.background="var(--hi)"; tape.style.color="var(--ink)"; tape.textContent="sin(x)/x   x → 0"; note.textContent="undefined at 0, yet the limit is 1 — press to walk x toward the origin and watch the tear fill."; }
+  };
+})();
+</script>
+</body>
+</html>
