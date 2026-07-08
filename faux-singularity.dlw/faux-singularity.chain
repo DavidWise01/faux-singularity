@@ -4,6 +4,6 @@ slug  : faux-singularity
 seal  : 457a4046815477c0a8ec3e9f0e60cda8158649ff165bd8cdcc515805a0ffb665
 prev  : d044c79f05a23a0e82d78729a0f2a11c5da6a1581c0d347cf32a16e0f39eb978
 link  : 95eece30c403a5a81e129bdcb40c12baa2735ed1270465d13ea31f8f0d541d19
-head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+head  : 13f9ace173ef2e60af38912ba329b4afcb5a38b84a0e4495e8d30327f8c99cc2
 
 — the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
